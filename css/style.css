@@ -55,6 +55,7 @@ body {
 .about p {
   font-size: 14px;
   margin-top: 15px;
+  margin-bottom: 15px;
   color: white;
   font-weight: 400;
   line-height: 24px;
@@ -141,7 +142,7 @@ ul.social-icons {
 
 .menu {
   height: 100px;
-  background-color: #ededed;
+  background-color: #dfdfdf;
   position: relative;
   padding-left: 130px;
   padding-right: 130px;
@@ -181,24 +182,6 @@ ul.social-icons {
 
 .tabs li.active a {
   color: #cf455c;
-}
-
-a.tab-profile.active i {
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-0px);
-  }
-
-  60% {
-    transform: translateY(-10px);
-  }
 }
 
 .tabs li>a>i {

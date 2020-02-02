@@ -39,45 +39,19 @@ ul.socialicons.main {
   left: -48px;
 }
 
-.pulse-button {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  line-height: 15px;
-  border: none;
-  box-shadow: 0 0 0 0 rgb(101, 100, 100);
-  background-color: #fff;
-  cursor: pointer;
-  color: #cf455c;
-  font-size: 20px;
-
-}
-
-body {
-  background: url(../images/bg-body.jpg);
-}
-
-
 /* aligns caption to center */
 .mfp-title {
   text-align: center;
   padding: 6px 0;
 }
 
-p,
-ul,
-li,
-ol {
+p, ul, li, ol {
   padding: 0px;
   margin: 0px;
   font-family: 'Roboto', sans-serif;
 }
 
-h1 h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif !important;
 }
 
@@ -387,11 +361,9 @@ h6 {
   background-color: #cf455c !important;
 }
 
-button.setting-icon {
+button#setting-icon {
   height: 30px;
   width: 30px;
-  position: relative;
-  top: 2px;
   background: #cf455c;
   color: #fff;
   border: 2px solid #fff;
@@ -407,10 +379,12 @@ button.setting-icon {
 
 .color-box .btn-style {
   opacity: 0;
+  pointer-events: none;
 }
 
 .color-box.main .btn-style {
   opacity: 1;
+  pointer-events: all;
 }
 
 .color-box.main {
@@ -635,12 +609,7 @@ button#green-color {
 
 
 @-webkit-keyframes bounce {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
+  0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
   }
 
@@ -654,12 +623,7 @@ button#green-color {
 }
 
 @-moz-keyframes bounce {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
+  0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
   }
 
@@ -673,12 +637,7 @@ button#green-color {
 }
 
 @-o-keyframes bounce {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
+  0%, 20%, 50%, 80%, 100% {
     -o-transform: translateY(0);
   }
 
@@ -692,12 +651,7 @@ button#green-color {
 }
 
 @keyframes bounce {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
+  0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
 
