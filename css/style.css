@@ -9,6 +9,10 @@ body {
   margin-top: 30px;
 }
 
+#content {
+  background: white;
+}
+
 #profile {
   background: #cf455c;
   background-image: url(../img/header-shadow.png);
@@ -144,10 +148,15 @@ ul.social-icons {
 }
 
 .tabs {
-  height: 117px;
+  height: 116px;
   position: absolute;
   margin-top: -14px;
   z-index: 100;
+}
+
+.tabs li {
+  float: left;
+  height: 116;
 }
 
 .tabs li>a {
@@ -166,8 +175,11 @@ ul.social-icons {
   margin-right: 35px;
 }
 
-a.tab-profile.active {
+.tabs li.active {
   background: url(../img/tab-hover.png) no-repeat;
+}
+
+.tabs li.active a {
   color: #cf455c;
 }
 
