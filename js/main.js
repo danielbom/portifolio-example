@@ -33,6 +33,61 @@ jQuery(document).ready(() => {
     $(".color-box").toggleClass("main");
   });
 
+  const $catsfilter = $(".cats-filter");
+  $catsfilter.find("a").click(function() {
+    $(this)
+      .parent()
+      .parent()
+      .find("a")
+      .removeClass("current");
+    $(this).addClass("current");
+  });
+
+  const $plist = $("#portifolio-list");
+  const $pfilter = $("#portifolio-filter");
+
+  $plist.isotope({
+    filter: "*",
+    layoutMode: "masonry",
+    animationOptions: {
+      duration: 750,
+      easing: "linear"
+    }
+  });
+
+  $pfilter.find("a").click(function() {
+    const selector = $(this).attr("data-filter");
+    $plist.isotope({
+      filter: selector,
+      layoutMode: "masonry",
+      animationOptions: {
+        duration: 750,
+        easing: "linear",
+        queue: false
+      }
+    });
+
+    return false;
+  });
+
+  $(".photo-inner ul").carouFredSel({
+    direction: "left",
+    circular: true,
+    auto: true,
+    scroll: {
+      items: 1,
+      fx: "crossfade",
+      duration: 1500,
+      wipe: true
+    },
+    swipe: {
+      onTouch: true
+    },
+    items: {
+      width: 153
+    }
+  });
+
   const $content = $("#content");
 
   $content.easytabs({

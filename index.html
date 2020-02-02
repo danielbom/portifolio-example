@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="css/style-main.css">
 </head>
 <body>
-
   <section id="container">
     <header>
       <div id="logo">
@@ -42,7 +41,7 @@
           <div class="photo-inner">
             <ul>
               <li><img src="img/photo.jpg" alt=""></li>
-              <!-- <li><img src="img/photo1.png" alt=""></li> -->
+              <li><img src="img/photo1.png" alt=""></li>
             </ul>
           </div>
           <h1>DANIEL AUGUSTO RODRIGUES FARINA</h1>
@@ -480,9 +479,86 @@
       </section>
 
       <section id="portifolio">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perferendis ullam alias maxime tempore consequuntur, reprehenderit atque dolore animi laborum nobis eligendi mollitia sed. Harum deleniti dolores quidem aspernatur fuga minima nostrum rerum? Id laboriosam, voluptas cumque et tempore inventore dolorum obcaecati sed veniam omnis rem natus ea explicabo hic!
-        </p>
+        <ul class="cats-filter" id="portifolio-filter">
+          <li><a class="current transition" data-filter="*">All</a></li>
+          <li><a class="transition" data-filter=".webdesign">Web Design</a></li>
+          <li><a class="transition" data-filter=".photography">Photography</a></li>
+          <li><a class="transition" data-filter=".illustration">Illustration</a></li>
+          <li><a class="transition" data-filter=".print">Print</a></li>
+          <li><a class="transition" data-filter=".animation">Animation</a></li>
+        </ul>
+
+        <br>
+
+        <div class="extra-text">
+          Some of the projects I am proud with 
+        </div>
+
+        <ul id="portifolio-list">
+          <li class="illustration print">
+            <a class="folio">
+              <img src="img/work3.jpg" alt="">
+              <h2 class="title">Hello Goodbye</h2>
+              <span class="categorie">Print / Illustration</span>
+            </a>
+          </li>
+
+          <li class="webdesign">
+            <a class="folio">
+              <img src="img/3-thumb.jpg" alt="">
+              <h2 class="title">Snow Time</h2>
+              <span class="categorie">Web design</span>
+            </a>
+          </li>
+
+          <li class="photography">
+            <a class="folio">
+              <img src="img/2-thumb.jpg" alt="">
+              <h2 class="title">Help us</h2>
+              <span class="categorie">Photography</span>
+            </a>
+          </li>
+
+          <li class="animation print">
+            <a class="folio">
+              <img src="img/4-thumb.jpg" alt="">
+              <h2 class="title">Sunshine</h2>
+              <span class="categorie">Print / Animation</span>
+            </a>
+          </li>
+
+          <li class="animation">
+            <a class="folio">
+              <img src="img/5-thumb.jpg" alt="">
+              <h2 class="title">Come together</h2>
+              <span class="categorie">Animation</span>
+            </a>
+          </li>
+
+          <li class="webdesign print">
+            <a class="folio">
+              <img src="img/6-thumb.jpg" alt="">
+              <h2 class="title">The yellow</h2>
+              <span class="categorie">Print / Web design</span>
+            </a>
+          </li>
+
+          <li class="photography">
+            <a class="folio">
+              <img src="img/7-thumb.jpg" alt="">
+              <h2 class="title">Black bird</h2>
+              <span class="categorie">Photography</span>
+            </a>
+          </li>
+
+          <li class="illustration">
+            <a class="folio">
+              <img src="img/8-thumb.jpg" alt="">
+              <h2 class="title">Revolution</h2>
+              <span class="categorie">Illustration</span>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section id="contact">

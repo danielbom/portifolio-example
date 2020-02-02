@@ -2,6 +2,10 @@ body {
   background-image: url(../img/bg-body.jpg);
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 #container {
   margin: 0 auto;
   width: 860px;
@@ -203,4 +207,104 @@ ul.social-icons {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   margin-left: 7px;
+}
+
+#portifolio {
+  padding: 30px;
+}
+
+#portifolio-list {
+  width: 820px;
+  overflow: hidden;
+}
+
+#portifolio-list li {
+  float: left;
+  margin-right: 25px;
+  text-align: center;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #e5e5e5;
+  height: 185px;
+  margin-bottom: 30px;
+  width: 180px;
+}
+
+#portifolio-list li:hover {
+  border-bottom: 1px solid #cf455c;
+  height: 185px;
+}
+
+#portifolio-list img {
+  background-color: white;
+  height: 120px;
+  width: 185px;
+}
+
+#portifolio-list li {
+  background-color: rgb(219, 219, 219);
+}
+
+#portifolio-list li:hover .title {
+  color: #cf455c;
+}
+
+#portifolio-list li .title {
+  font-size: 14px;
+  margin-top: 15px;
+  font-weight: 400;
+  color: #3a3a3a;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+#portifolio-list li .categorie {
+  font-size: 11px;
+  line-height: 25px;
+  color: #999;
+}
+
+.cats-filter {
+  border-bottom: 1px solid #ededed;
+  overflow: hidden;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.cats-filter li a {
+  float: left;
+  margin-right: 7px;
+  color: white;
+  background-color: #777;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.cats-filter li a:hover {
+  text-decoration: none;
+}
+
+.cats-filter li a.current {
+  background: #cf455c;
+}
+
+.extra-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* https://isotope.metafizzy.co/v1/docs/animating.html */
+/* https://isotope.metafizzy.co/v1/tests/jquery-animation.html */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
 }
