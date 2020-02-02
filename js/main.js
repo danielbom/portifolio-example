@@ -1,6 +1,6 @@
 jQuery(document).ready(() => {
+  // Logo animation
   const $logo = $("#logo");
-
   if (location.href.indexOf("#") !== -1) {
     $logo.show();
   }
@@ -13,6 +13,7 @@ jQuery(document).ready(() => {
     $logo.fadeOut("slow");
   });
 
+  // Color manipulation
   $("#yellow-color").click(function(e) {
     $(".main-wrapper-resume").attr("id", "yellow");
   });
@@ -33,6 +34,7 @@ jQuery(document).ready(() => {
     $(".color-box").toggleClass("main");
   });
 
+  // Portifolio items filtering
   const $catsfilter = $(".cats-filter");
   $catsfilter.find("a").click(function() {
     $(this)
@@ -70,6 +72,7 @@ jQuery(document).ready(() => {
     return false;
   });
 
+  // Profile image animation
   $(".photo-inner ul").carouFredSel({
     direction: "left",
     circular: true,
@@ -88,6 +91,7 @@ jQuery(document).ready(() => {
     }
   });
 
+  // Menu nav bar manipulation
   const $content = $("#content");
 
   $content.easytabs({
